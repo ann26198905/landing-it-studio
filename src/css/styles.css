@@ -68,8 +68,88 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
   font-size: inherit; }
 
-.block {
-  width: 50px;
-  height: 50px;
-  background-color: blue;
-  border: 1px solid grey; }
+.wrapper {
+  max-width: 1920px;
+  overflow: hidden;
+  min-height: 100vh; }
+
+.page {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .page__main-screen {
+    min-height: 100vh;
+    background: url("./img/main-screen.jpg") no-repeat center/cover border-box; }
+  .page__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .page__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 220px; }
+  .page__title {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25), -1px -1px 0 rgba(0, 0, 0, 0.25);
+    text-align: center; }
+  .page__btn {
+    margin-top: 50px;
+    width: 200px;
+    height: 45px;
+    background: #4985FF;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF; }
+
+.main-menu {
+  padding-top: 40px;
+  position: relative;
+  top: 0;
+  left: 16.5%; }
+  .main-menu__item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 40px;
+    position: relative;
+    padding-bottom: 39px; }
+    .main-menu__item:last-child {
+      margin-right: 0; }
+    .main-menu__item::after {
+      position: absolute;
+      content: '';
+      top: 39px;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      height: 2px; }
+
+.hidden-menu {
+  color: #fff;
+  position: relative; }
+  .hidden-menu__line {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 15px;
+    height: 2px; }

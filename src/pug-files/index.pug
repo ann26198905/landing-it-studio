@@ -3,12 +3,36 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0  maximum-scale=1.0")
-        
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="./styles.min.css")
 
-        title Test
+        title Landing-it-studio
     body
-        .block
+        .wrapper
+            main.page.page__main-screen
+                nav.main-menu
+                    a.main-menu__item(href="#") Главная
+                    a.main-menu__item(href="#") Наши проекты
+                    a.main-menu__item(href="#") Услуги
+                    a.main-menu__item(href="#") Новости
+                    a.main-menu__item(href="#") Контакты
+                .hidden-menu
+                    span.hidden-menu__line
+                    span.hidden-menu__line
+                    span.hidden-menu__line
+                .page__content
+                    span.page__text Передовая IT студия
+                    p.page__title Мы создаем легкие решения <br>сложных задач и проблем
+                    button.page__btn Наши проекты
+                    
+            .content
+                section.services
+                section.about-us
+                section.all-services
+                section.all-projects
+                section.video
+                section.subscribe
+            footer
 
         script(src="./libs.min.js")
         script(src="./script.min.js")

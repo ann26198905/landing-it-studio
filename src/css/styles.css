@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
     width: 200px;
     height: 45px;
-    background: #4985FF;
+    background: #4985ff;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
     border-radius: 30px;
     font-family: Montserrat;
@@ -114,7 +114,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    color: #FFFFFF; }
+    color: #ffffff; }
+    .page__btn:hover {
+      background-color: rgba(124, 168, 255, 0.980392); }
 
 .main-menu {
   padding-top: 40px;
@@ -133,23 +135,125 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 39px; }
     .main-menu__item:last-child {
       margin-right: 0; }
-    .main-menu__item::after {
-      position: absolute;
-      content: '';
-      top: 39px;
-      left: 0;
-      background-color: #fff;
-      width: 100%;
-      height: 2px; }
+    .main-menu__item:hover {
+      color: rgba(175, 202, 255, 0.980392); }
+      .main-menu__item:hover::after {
+        position: absolute;
+        content: "";
+        top: 39px;
+        left: 0;
+        background-color: rgba(175, 202, 255, 0.980392);
+        width: 100%;
+        height: 2px; }
 
 .hidden-menu {
-  color: #fff;
-  position: relative; }
-  .hidden-menu__line {
+  display: none;
+  transition: 0.25s ease-in-out;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  margin: 50px 50px 0 0;
+  position: relative;
+  top: 0;
+  left: 40%;
+  z-index: 150;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px; }
+  .hidden-menu:hover {
+    background: rgba(255, 255, 255, 0.8); }
+  .hidden-menu__hamburger {
     position: absolute;
-    content: '';
-    top: 0;
+    height: 100%;
+    width: 100%; }
+  .hidden-menu__cross {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform: rotate(45deg); }
+  .hidden-menu__line {
+    display: block;
+    background: rgba(175, 202, 255, 0.980392);
+    border-radius: 2px;
+    width: 35px;
+    height: 5px;
+    position: relative;
+    top: 5%;
+    left: 15%;
+    margin: 8px 0; }
+    .hidden-menu__line:nth-child(1) {
+      transition-delay: 0.5s; }
+    .hidden-menu__line:nth-child(2) {
+      transition-delay: 0.625s; }
+    .hidden-menu__line:nth-child(3) {
+      transition-delay: 0.75s; }
+  .hidden-menu__line2 {
+    display: block;
+    background: rgba(175, 202, 255, 0.980392);
+    border-radius: 2px; }
+    .hidden-menu__line2:nth-child(1) {
+      height: 0%;
+      width: 5px;
+      position: absolute;
+      top: 10%;
+      left: 45%;
+      transition-delay: 0s; }
+    .hidden-menu__line2:nth-child(2) {
+      width: 0%;
+      height: 5px;
+      position: absolute;
+      left: 10%;
+      top: 45%;
+      transition-delay: 0.25s; }
+
+.open .hidden-menu__line {
+  width: 0%; }
+  .open .hidden-menu__line:nth-child(1) {
+    transition-delay: 0s; }
+  .open .hidden-menu__line:nth-child(2) {
+    transition-delay: 0.125s; }
+  .open .hidden-menu__line:nth-child(3) {
+    transition-delay: 0.25s; }
+
+.open .hidden-menu__line2:nth-child(1) {
+  height: 80%;
+  transition-delay: 0.625s; }
+
+.open .hidden-menu__line2:nth-child(2) {
+  width: 80%;
+  transition-delay: 0.375s; }
+
+@media screen and (max-width: 890px) {
+  .hidden-menu {
+    display: flex;
+    align-self: center; }
+  .main-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: -1000%;
     left: 0;
-    background-color: #fff;
-    width: 15px;
-    height: 2px; }
+    background-color: #353536;
+    overflow: hidden;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px; }
+    .main-menu__item {
+      font-size: 22px;
+      width: 50%;
+      margin: 20px 0 20px 0; }
+      .main-menu__item:hover {
+        color: rgba(175, 202, 255, 0.980392); }
+        .main-menu__item:hover::after {
+          height: 0;
+          width: 0; }
+  .lock {
+    overflow: hidden; }
+  .active2 {
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; } }

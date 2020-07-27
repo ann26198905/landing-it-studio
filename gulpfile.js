@@ -33,10 +33,10 @@ var jsLibs = [
 
 //Порядок подключения js файлов
 var jsFiles = [
-   // 'src/js-files/menu-icon.js',
+   'src/js-files/menu-icon.js',
    // 'src/js-files/slick.js',
    // 'src/js-files/index.js',
-   'src/js-files/test.js'
+   // 'src/js-files/buttons.js'
 ]
 
 //Прочие необходимые файлы, перенос в build

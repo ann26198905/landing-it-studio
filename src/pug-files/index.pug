@@ -10,16 +10,20 @@ html(lang="en")
     body
         .wrapper
             main.page.page__main-screen
-                nav.main-menu
+                .hidden-menu.js-menu
+                    .hidden-menu__hamburger
+                        span.hidden-menu__line
+                        span.hidden-menu__line
+                        span.hidden-menu__line
+                    .hidden-menu__cross
+                        span.hidden-menu__line2
+                        span.hidden-menu__line2
+                nav.main-menu.js-menu-body
                     a.main-menu__item(href="#") Главная
                     a.main-menu__item(href="#") Наши проекты
                     a.main-menu__item(href="#") Услуги
                     a.main-menu__item(href="#") Новости
                     a.main-menu__item(href="#") Контакты
-                .hidden-menu
-                    span.hidden-menu__line
-                    span.hidden-menu__line
-                    span.hidden-menu__line
                 .page__content
                     span.page__text Передовая IT студия
                     p.page__title Мы создаем легкие решения <br>сложных задач и проблем

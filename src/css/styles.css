@@ -328,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 180px; }
 
 .about-us {
-  background: #F6F6F8; }
+  background: #f6f6f8; }
   .about-us__container {
     display: flex; }
   .about-us__text {
@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 100px 0 90px 121px; }
   .about-us__projects {
     padding: 70px 0;
-    border-top: 1px solid #E0E0E0;
+    border-top: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-evenly; }
   .about-us__project-img {
@@ -355,3 +355,54 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 17px 20px; }
   .about-us__project-text {
     display: block; }
+
+.all-services__part1 {
+  background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+  max-height: 490px; }
+
+.all-services__cont {
+  display: flex;
+  justify-content: space-between; }
+
+.all-services__title {
+  padding-top: 100px;
+  color: white;
+  margin-bottom: 70px; }
+
+.all-services__cont2 {
+  display: flex;
+  justify-content: space-between; }
+
+.all-services__part2 {
+  padding-bottom: 85px; }
+
+.all-services__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0 85px 0;
+  border-bottom: 1px solid #E0E0E0; }
+
+.all-services__block-text {
+  max-width: 350px; }
+
+.all-services__titl {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000; }
+
+.all-services__num {
+  color: #4985ff; }
+
+.all-services__text {
+  margin: 30px 0; }
+
+.all-services__link {
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #4985FF; }
+
+.all-services__btn {
+  margin-top: 120px; }

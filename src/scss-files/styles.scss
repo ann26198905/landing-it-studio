@@ -331,7 +331,7 @@
   }
 }
 .about-us {
-    background: #F6F6F8;
+  background: #f6f6f8;
   &__container {
     display: flex;
   }
@@ -355,10 +355,10 @@
   }
 
   &__projects {
-      padding: 70px 0;
-      border-top: 1px solid #E0E0E0;
-      display: flex;
-      justify-content: space-evenly;
+    padding: 70px 0;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   &__project-img {
@@ -373,11 +373,71 @@
   }
 
   &__project-text {
-      display: block;
+    display: block;
   }
 }
-
 .all-services {
+  &__part1 {
+    background: linear-gradient(90deg, #504dc2 20.44%, #5f12d0 80.91%), #c4c4c4;
+    max-height: 490px;
+  }
+
+  &__cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    padding-top: 100px;
+    color: white;
+    margin-bottom: 70px;
+  }
+
+  &__cont2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__part2 {
+      padding-bottom: 85px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0 85px 0;
+    border-bottom: 1px solid #E0E0E0;
+  }
+
+  &__block-text {
+    max-width: 350px;
+  }
+  &__titl {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &__num {
+    color: #4985ff;
+  }
+
+  &__text {
+      margin: 30px 0;
+  }
+
+  &__link {
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #4985FF;
+    
+  }
+  &__btn {
+    margin-top: 120px;
+  }
 }
 
 .all-projects {

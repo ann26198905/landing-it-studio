@@ -439,6 +439,25 @@
     margin-top: 120px;
   }
 }
+.all-projects {
+  background: #f6f6f8;
+  &__container {
+    text-align: center;
+  }
+
+  &__title {padding: 100px 0 50px 0;
+  }
+
+  &__block-img {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 50px 0;
+  }
+
+  &__btn {
+    margin-bottom: 130px;
+  }
+}
 
 .all-projects {
 }

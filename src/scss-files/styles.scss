@@ -331,7 +331,7 @@
   }
 }
 .about-us {
-    background: #F6F6F8;
+  background: #f6f6f8;
   &__container {
     display: flex;
   }
@@ -355,10 +355,10 @@
   }
 
   &__projects {
-      padding: 70px 0;
-      border-top: 1px solid #E0E0E0;
-      display: flex;
-      justify-content: space-evenly;
+    padding: 70px 0;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   &__project-img {
@@ -373,11 +373,30 @@
   }
 
   &__project-text {
-      display: block;
+    display: block;
   }
 }
 
 .all-services {
+}
+.all-projects {
+  background: #f6f6f8;
+  &__container {
+    text-align: center;
+  }
+
+  &__title {padding: 100px 0 50px 0;
+  }
+
+  &__block-img {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 50px 0;
+  }
+
+  &__btn {
+    margin-bottom: 130px;
+  }
 }
 
 .all-projects {

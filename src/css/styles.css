@@ -328,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 180px; }
 
 .about-us {
-  background: #F6F6F8; }
+  background: #f6f6f8; }
   .about-us__container {
     display: flex; }
   .about-us__text {
@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 100px 0 90px 121px; }
   .about-us__projects {
     padding: 70px 0;
-    border-top: 1px solid #E0E0E0;
+    border-top: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-evenly; }
   .about-us__project-img {
@@ -355,3 +355,16 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 17px 20px; }
   .about-us__project-text {
     display: block; }
+
+.all-projects {
+  background: #f6f6f8; }
+  .all-projects__container {
+    text-align: center; }
+  .all-projects__title {
+    padding: 100px 0 50px 0; }
+  .all-projects__block-img {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 50px 0; }
+  .all-projects__btn {
+    margin-bottom: 130px; }

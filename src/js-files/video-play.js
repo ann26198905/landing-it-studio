@@ -7,7 +7,7 @@ $(document).ready(function () {
     vidRound = document.querySelector(".js-round");
 
   // если браузер может воспроизводить видео удаляем класс
-  videoEl.addEventListener("canplaythrough", (event) => {
+  videoEl.addEventListener("canplaythrough", function () {
     vidControls.classList.remove("hide");
   });
   // запускам или останавливаем воспроизведение

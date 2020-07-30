@@ -277,6 +277,14 @@ h1, h2, h3, h4, h5, h6 {
   .common__btn:hover {
     background-color: rgba(124, 168, 255, 0.980392); }
 
+.common__titl {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000; }
+
 .services {
   text-align: center; }
   .services__title {
@@ -385,14 +393,6 @@ h1, h2, h3, h4, h5, h6 {
 .all-services__block-text {
   max-width: 350px; }
 
-.all-services__titl {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  color: #000000; }
-
 .all-services__num {
   color: #4985ff; }
 
@@ -493,6 +493,48 @@ h1, h2, h3, h4, h5, h6 {
 .backgr {
   background-color: rgba(236, 239, 237, 0.34); }
 
-.njg {
-  height: 200px;
-  border: 1px solid #000; }
+.subscribe {
+  text-align: center; }
+  .subscribe__title {
+    padding-top: 260px;
+    position: relative; }
+    .subscribe__title::before {
+      content: "";
+      position: absolute;
+      top: 200px;
+      left: 50%;
+      transform: translate(-555px, 0);
+      width: 1110px;
+      height: 2px;
+      background-color: #e0e0e0; }
+  .subscribe__text {
+    margin: 20px 0 30px 0; }
+  .subscribe__send {
+    display: flex;
+    justify-content: center; }
+  .subscribe__inp-mail {
+    width: 299px;
+    height: 45px;
+    border: 1px solid #f2f2f2;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px 0 0 30px;
+    padding: 0 0 0 33px;
+    vertical-align: middle;
+    font-size: 13px;
+    line-height: 21px; }
+  .subscribe__inp-subm {
+    width: 190px;
+    height: 45px;
+    background: #4985ff;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    border-radius: 0px 30px 30px 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff; }
+  .subscribe__text2 {
+    margin: 35px 0 85px 0;
+    font-size: 13px;
+    line-height: 21px; }

@@ -103,18 +103,18 @@ html(lang="en")
                         .wrapper__cont
                             .all-services__content
                                 .all-services__block-text
-                                    span.all-services__num.all-services__titl 01. 
-                                    span.all-services__titl Исследование и упаковка
+                                    span.all-services__num.common__titl 01. 
+                                    span.all-services__titl.common__titl Исследование и упаковка
                                     p.all-services__text.common__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
                                     a.all-services__link.common__text(href="#") Подробнее
                                 .all-services__block-text
-                                    span.all-services__num.all-services__titl 01. 
-                                    span.all-services__titl Исследование и упаковка
+                                    span.all-services__num.common__titl 01. 
+                                    span.all-services__titl.common__titl Исследование и упаковка
                                     p.all-services__text.common__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
                                     a.all-services__link.common__text(href="#") Подробнее
                                 .all-services__block-text
-                                    span.all-services__num.all-services__titl 01. 
-                                    span.all-services__titl Исследование и упаковка
+                                    span.all-services__num.common__titl 01. 
+                                    span.all-services__titl.common__titl Исследование и упаковка
                                     p.all-services__text.common__text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
                                     a.all-services__link.common__text(href="#") Подробнее
                 section.all-projects
@@ -143,15 +143,17 @@ html(lang="en")
                                     .video__video-round.js-round
                                         .video__video-triangle
                                     p.video__video-text.common__text.js-text Смотреть видео
-
-
-                .njg        
                 section.subscribe
+                    p.subscribe__title.common__titl Подпишитесь на нашу рассылку
+                    p.subscribe__text.common__text Полезные статьи, акции, новости - получите все это сейчас!
+                    .subscribe__send
+                        input.subscribe__inp-mail(placeholder="Ваш email" required type="email" )
+                        input.subscribe__inp-subm(type="submit" value="Подписаться" )
+                    p.subscribe__text2.common__text Мы не шлем спам, и передаем никому ваши данные.
             footer
 
         script(src="./libs.min.js")
-        //- script(src="./script.min.js")
-        script(src="./script.js")
+        script(src="./script.min.js")
             
 
 

@@ -74,10 +74,10 @@ function scripts() {
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
       .pipe(concat('script.js')) //Объединение файлов в один
-      // .pipe(uglify({
-      //    toplevel: true
-      // })) //Минификация JS
-      // .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+      .pipe(uglify({
+         toplevel: true
+      })) //Минификация JS
+      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
       .pipe(gulp.dest('./build'))
       .pipe(browserSync.stream());
 }

@@ -129,11 +129,29 @@ html(lang="en")
                                 img.all-projects__img(src="./img/all-projects.png", alt="all-projects")
                             button.all-projects__btn.common__btn Все проекты
                 section.video
+                    .video__cont
+                        .video__title.common__title Видео о нашей работе
+                        .video__text.common__text Просто посмотрите, как мы работаем
+                        .video__video-block
+                            .video__video-poster.js-video-poster
+                            video.video__video.js-video(width="760" height="450" autoplay loop)
+                                source(src="./img/Pexels-Videos-1654216.ogv" type='video/ogg')
+                                source(src="./img/Pexels Videos 1654216.mp4" type='video/mp4')
+                                source(src="./img/Pexels Videos 1654216.webm" type='video/webm')
+                            .video__video-controls.js-controls.hide
+                                .video__video-oval.js-play
+                                    .video__video-round.js-round
+                                        .video__video-triangle
+                                    p.video__video-text.common__text.js-text Смотреть видео
+
+
+                .njg        
                 section.subscribe
             footer
 
         script(src="./libs.min.js")
-        script(src="./script.min.js")
+        //- script(src="./script.min.js")
+        script(src="./script.js")
             
 
 

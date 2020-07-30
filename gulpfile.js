@@ -1,4 +1,3 @@
-"use strict";
 
 const gulp                 = require('gulp');
 const {series, parallel}   = require('gulp'); // Подключаем Gulp
@@ -19,31 +18,29 @@ const eslint               = require('gulp-eslint');
 
 //Порядок подключения css файлов
 var cssFiles = [
-   // 'src/fonts/iconfont/material-icons.css', //плагин
-   // 'src/slick/slick/slick.css', //плагин
-   // 'src/slick/slick/slick-theme.css', //плагин
    'src/css/styles.css'
-]
+];
 
 //Порядок подключения js библиотек
 var jsLibs = [
    'src/js-files/jquery-3.5.0.min.js',
-   // 'src/slick/slick/slick.min.js'
-]
+];
 
 //Порядок подключения js файлов
 var jsFiles = [
    'src/js-files/menu-icon.js',
-   // 'src/js-files/slick.js',
-   // 'src/js-files/index.js',
-   // 'src/js-files/buttons.js'
-]
+   'src/js-files/video-play.js',
+];
 
 //Прочие необходимые файлы, перенос в build
 var OtherFiles = [
    // 'src/chosen/*.png',
    '*.+(ico|php)'
-]
+];
+
+function newFunction() {
+   "use strict";
+}
 
 //Таск на стили SCSS
 function scss() {
@@ -77,10 +74,10 @@ function scripts() {
       .pipe(eslint.format())
       .pipe(eslint.failAfterError())
       .pipe(concat('script.js')) //Объединение файлов в один
-      .pipe(uglify({
-         toplevel: true
-      })) //Минификация JS
-      .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
+      // .pipe(uglify({
+      //    toplevel: true
+      // })) //Минификация JS
+      // .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
       .pipe(gulp.dest('./build'))
       .pipe(browserSync.stream());
 }
@@ -97,7 +94,7 @@ function libs() {
       })) //Минификация JS
       .pipe(concat('libs.js')) //Объединение файлов в один
       .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-      .pipe(gulp.dest('./build'))
+      .pipe(gulp.dest('./build'));
 }
 
 //Таск на скрипты PUG
